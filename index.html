@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="main.css">
     <title>Multimediedesigner - Vicky Sonne Thomsen</title>
 </head>
+
 <body>
+
     <!--
     Header/menubar der skal være stationær på siden.
     En bar skal følge med når man scroller og indikerer hvor på siden man er på siden.
@@ -24,13 +26,31 @@
             <li><a href="">Kontakt mig</a></li>
         </nav>
     </header>
+
     <!-- Main er det element hvor alt mit content er i, borset fra header. -->
     <main>
+
         <!-- 
         Denne section indeholder kontakt siden tilvenstre for forsiden. '
         Den skal ikke være med i mobil versionen.
         -->
-        <section id="contact-white" class="contact"></section>
+        <section id="contact-white" class="contact">
+            <address>
+                <h4>Kontakt information</h4>
+                <p>Email:</p>
+                <p>Mobile:</p>
+                <p>Address:</p>
+            </address>
+            <form>
+                <h4>Kontakt formular</h4>
+                <div>Navn</div>
+                <div>Email</div>
+                <div>Emne</div>
+                <div>Besked</div>
+                <button>Send</button>
+            </form>
+        </section>
+
         <!-- Denne section indeholder forsiden-->
         <section id="splash"></section>
         <!-- Denne section indeholder information om mig. Den skal ikke være med i mobil versionen. -->
@@ -40,7 +60,22 @@
         <!-- Denne section indeholder mine projektor arrangeret i en form for horizontal scroll -->
         <section id="projects"></section>
         <!-- Denne section indeholder kontakt siden helt til slut i højre side af hjemmesiden, eller bunden af mobil versionen. -->
-        <section id="contact-black" class="contact"></section>
+        <section id="contact-black" class="contact">
+            <address>
+                <h4>Kontakt information</h4>
+                <p>Email:</p>
+                <p>Mobile:</p>
+                <p>Address:</p>
+            </address>
+            <form>
+                <h4>Kontakt formular</h4>
+                <div>Navn</div>
+                <div>Email</div>
+                <div>Emne</div>
+                <div>Besked</div>
+                <button>Send</button>
+            </form>
+        </section>
     </main>
 </body>
 </html>

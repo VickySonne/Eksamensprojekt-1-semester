@@ -191,3 +191,20 @@ section{
     grid-row-start: 3;
     background-image: linear-gradient(rgba(21, 21, 21,0.0), #151515); 
 }
+
+/* Grid til kontakt */
+
+.grid-contact-black{
+    display: grid;
+    grid-template-columns: 3.5rem auto 3.5rem;
+}
+
+form{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.icon-contact{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}

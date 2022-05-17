@@ -154,14 +154,14 @@ section{
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
-    background-image: linear-gradient(rgba(21, 21, 21,0.0), #151515); 
+    background: linear-gradient(rgba(21, 21, 21,0.0), #151515); 
 }
 
 .ui-text{
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
-    background-image: linear-gradient(rgba(21, 21, 21,0.0), #151515);    
+    background: linear-gradient(rgba(21, 21, 21,0.0), #151515);    
 }
 
 .proto-text{
@@ -207,4 +207,29 @@ form{
 .icon-contact{
     grid-column-start: 1;
     grid-column-end: 2;
+}
+
+/* Icon graffik */
+
+.icon-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.line{
+    background-color: grey;
+    width: 2px;
+    height: 5rem;
+}
+
+.icon-style{
+    border: solid 2px grey; /* for ikke nogen border uden solid*/
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

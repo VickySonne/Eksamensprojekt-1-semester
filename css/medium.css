@@ -2,9 +2,14 @@
 
 @media only screen and (min-width: 43rem) {
     
+    body{
+        height: calc(100vh - 4rem); /* For at undgå overflow på y*/
+    }
+
     header{
         padding-left: 1rem;
         padding-right: 1rem;
+        height: 4rem;
     }
     
     nav{

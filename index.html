@@ -71,34 +71,49 @@
         </section>
 
         <!-- Denne section indeholder forsiden-->
-        <section id="splash">
-            <!-- baggrundsbillede -->
-            <button class="black-button hide">sort rund knap</button>
+        <section id="splash" class="grid-splash">
 
-            <div>
-                <h2 class="hide"> 
+            <div class="side-portrait"></div>
+
+            <h1 class="name">Vicky Sonne Thomsen</h1>
+
+            <div>            
+                <button class="black-button hide">sort rund knap</button>
+            </div>
+
+            <div class="hide">
+                <h2 > 
                     Har du et projekt du skal have på benene 
                     eller er jeg din kommende medarbejder, 
                     så er du altid velkommen til at kontakte mig.
                 </h2>
-                <h1 class="hide">Du kan kontakte mig her</h1>
+                <h1>Du kan kontakte mig her</h1>
             </div>
 
-            <div>
-                <h2>Jeg er en kreativ multimediedesigner og 
+            <div class="intro">
+                <h2 >
+                    Kreativ multimediedesigner og 
                     freelancer med passion for konceptudvikling, 
                     UI og UX
                 </h2>
-                <h1>Lær mig bedre at kende</h1>
+                <h1 class="hide">Lær mig bedre at kende</h1>
             </div>
 
+            <button class="contact-splash">Kontakt mig</button>
+            
             <button class="white-button hide">hvid rund knap</button>
 
             <button class="scroll-button">Scroll</button>
+            
+            <div>
+                <i class="fa-brands fa-linkedin-in"></i>
+                <i class="fa-solid fa-at"></i>
+                <i class="fa-solid fa-phone"></i>
+            </div>
         </section>
 
         <!-- Denne section indeholder information om mig. Den skal ikke være med i mobil versionen. -->
-        <section id="about">
+        <section id="about" class="hide">
             <div>
                 <h1>Vicky Sonne Thomsen</h1>
                 <p>Jeg er en ung kvinde på snart 26 år. 
@@ -123,51 +138,51 @@
 
         <!--  Denne section indeholder mine kompetencer og færdigheder. Det skal være en mindre version på mobilen. -->
         <section id="skills">
-            <div>
+            <div class="hide">
                 <div>01.</div>
                 <div>border</div>
                 <h3>Kompetencer</h3>
             </div>
 
-            <div id="kompetencer">
-                <img src="" alt="en person der sidder og brainstomer på et papir">
+            <div id="kompetencer" class="grid-skills">
+                <img class="concept-image" src="" alt="en person der sidder og brainstomer på et papir">
 
-                <img src="" alt="en person der sidder og designer en wireframe til en hjemmeside">
+                <img class="ui-image" src="" alt="en person der sidder og designer en wireframe til en hjemmeside">
 
-                <img src="" alt="en person der sidder ved computeren og arbejder med en prototype til en app i XD">
+                <img  class="proto-image" src="" alt="en person der sidder ved computeren og arbejder med en prototype til en app i XD">
 
-                <img src="" alt="en computer med HTML kode på skærmen">
+                <img class="html-image" src="" alt="en computer med HTML kode på skærmen">
 
-                <img src="" alt="en person der sidder og animere en video i adobe animate">
+                <img class="ani-image" src="" alt="en person der sidder og animere en video i adobe animate">
 
-                <img src="" alt="en person der tager et billede af en anden person der tager et billede">
+                <img class="foto-image" src="" alt="en person der tager et billede af en anden person der tager et billede">
 
-                <div>
+                <div class="concept-text">
                     <h6>Koncept udvikling</h6>
                     <div></div>
                 </div>
 
-                <div>
+                <div class="ui-text">
                     <h6>UI og UX</h6>
                     <div></div>
                 </div>
 
-                <div>
+                <div class="proto-text">
                     <h6>Prototyper</h6>
                     <div></div>
                 </div>
 
-                <div>
+                <div class="html-text">
                     <h6>HTML og CSS</h6>
                     <div></div>
                 </div>
 
-                <div>
+                <div class="ani-text">
                     <h6>Grafisk design</h6>
                     <div></div>
                 </div>
 
-                <div>
+                <div class="foto-text">
                     <h6>Foto og video</h6>
                     <div></div>
                 </div>
@@ -176,7 +191,7 @@
 
         <!-- Denne section indeholder mine projekter arrangeret i en form for horizontal scroll -->
         <section id="projects">
-            <div>
+            <div class="hide">
                 <div>02.</div>
                 <div>border</div>
                 <h3>Projekter</h3>
@@ -241,7 +256,7 @@
 
         <!-- Denne section indeholder kontakt siden helt til slut i højre side af hjemmesiden, eller bunden af mobil versionen. -->
         <section id="contact-black" class="contact">
-            <div>
+            <div class="hide">
                 <div>03.</div>
                 <div>border</div>
                 <h3>Kontakt</h3>

@@ -7,7 +7,7 @@
 }
 
 img{
-    /*max neccesarry because?*/
+    /*max er nødvendigt for at billeder bliver så stort som der kan blive i boksen den er i*/
     max-width: 100%;
 }
 
@@ -16,13 +16,13 @@ img{
 }
 
 body{
-    height: calc(100vh - 4rem); /* For at undgå overflow på y*/
+    height: calc(100vh - 3rem); /* For at undgå overflow på y*/
     margin: 0;
     font-family: acumin-pro, sans-serif;
 }
 
 header{
-    height: 4rem;
+    height: 3rem;
     background-color: aquamarine;
     display: flex;
     flex-direction: row;
@@ -56,4 +56,138 @@ main{
 section{
     height: 500px;
     background-color: aqua;
+}
+
+/* Grid til forside */
+.grid-splash{
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr 1fr;
+}
+
+.side-portrait{ /* Skal måske have det til kun at fylde halvdelen af sectionen, kommer an på billedet*/
+    background-image: url(https://fakeimg.pl/320x500/);
+    background-color: greenyellow;
+    background-repeat: no-repeat;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
+
+.intro{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+}
+
+.scroll-button{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 4;
+}
+
+.contact-splash{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+}
+
+.name{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1; 
+}
+
+.icon-splash{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+/* grid til kompetense sektionen */
+.grid-skills{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:  1fr 1fr 1fr;
+    height: 100%;
+}
+
+.concept-image{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+}
+
+.ui-image{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+}
+
+.proto-image{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+}
+
+.html-image{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+}
+
+.ani-image{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+}
+
+.foto-image{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+}
+
+.concept-text{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    background-image: linear-gradient(rgba(21, 21, 21,0.0), #151515); 
+}
+
+.ui-text{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    background-image: linear-gradient(rgba(21, 21, 21,0.0), #151515);    
+}
+
+.proto-text{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    background-image: linear-gradient(rgba(21, 21, 21,0.0), #151515); 
+}
+
+.html-text{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    background-image: linear-gradient(rgba(21, 21, 21,0.0), #151515); 
+}
+
+.ani-text{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    background-image: linear-gradient(rgba(21, 21, 21,0.0), #151515); 
+}
+
+.foto-text{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    background-image: linear-gradient(rgba(21, 21, 21,0.0), #151515); 
 }

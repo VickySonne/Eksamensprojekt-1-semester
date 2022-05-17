@@ -1,0 +1,59 @@
+/* CSS der er shared for hele dokumentet og mobilversionen*/
+
+*{
+    all: unset; /*Fjerne all user agent stylesheet*/
+    display: revert; /*Den aktiverer display funktionen i user agent stylesheet*/
+    box-sizing: border-box; /*Bredde på et element er inklusiv padding og border*/
+}
+
+img{
+    /*max neccesarry because?*/
+    max-width: 100%;
+}
+
+.hide{
+    display: none;
+}
+
+body{
+    height: calc(100vh - 4rem); /* For at undgå overflow på y*/
+    margin: 0;
+    font-family: acumin-pro, sans-serif;
+}
+
+header{
+    height: 4rem;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: brown;
+}
+
+section{
+    height: 500px;
+    background-color: aqua;
+}

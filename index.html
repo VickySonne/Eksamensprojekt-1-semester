@@ -6,7 +6,10 @@
     <meta name="author" content="Vicky Sonne Thomsen">
     <meta name="description" content="Præsentationsportfolio af Vicky Sonne Thomsen - Multimediedesigner og Freelancer">
     <!-- Mangler at skrive keywords ind -->
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="https://use.typekit.net/syd1ydh.css">
     <title>Multimediedesigner - Vicky Sonne Thomsen</title>
     <script src="https://kit.fontawesome.com/b6aff02aa6.js" crossorigin="anonymous"></script>
 </head>
@@ -19,15 +22,15 @@
     <header> 
         <div>
             <div>&lt;SDS&gt;</div>
-            <div>&lt;h1&gt;Sonne Design Solutions&lt;/h1&gt;</div>
+            <h1 class="hide">&lt;h1&gt;Sonne Design Solutions&lt;/h1&gt;</h1>
         </div>
 
         <nav>
-            <li><a href="">Forside</a></li>
-            <li><a href="">Om mig</a></li>
+            <li class="hide"><a href="">Forside</a></li>
+            <li class="hide"><a href="">Om mig</a></li>
             <li><a href="">Kompetencer</a></li>
             <li><a href="">Projekter</a></li>
-            <li><a href="">Kontakt mig</a></li>
+            <li><a href="">Kontakt</a></li>
         </nav>
     </header>
 
@@ -37,7 +40,7 @@
         Denne section indeholder kontakt siden tilvenstre for forsiden.
         Den skal ikke være med i mobil versionen.
         -->
-        <section id="contact-white" class="contact">
+        <section id="contact-white" class="contact hide">
             <div>
                 <i class="fa-brands fa-linkedin-in"></i>
                 <i class="fa-solid fa-at"></i>
@@ -70,15 +73,15 @@
         <!-- Denne section indeholder forsiden-->
         <section id="splash">
             <!-- baggrundsbillede -->
-            <button class="black-button">sort rund knap</button>
+            <button class="black-button hide">sort rund knap</button>
 
             <div>
-                <h2> 
+                <h2 class="hide"> 
                     Har du et projekt du skal have på benene 
                     eller er jeg din kommende medarbejder, 
                     så er du altid velkommen til at kontakte mig.
                 </h2>
-                <h1>Du kan kontakte mig her</h1>
+                <h1 class="hide">Du kan kontakte mig her</h1>
             </div>
 
             <div>
@@ -89,9 +92,9 @@
                 <h1>Lær mig bedre at kende</h1>
             </div>
 
-            <button class="white-button">hvid rund knap</button>
+            <button class="white-button hide">hvid rund knap</button>
 
-            <button class="scroll-button">scroll</button>
+            <button class="scroll-button">Scroll</button>
         </section>
 
         <!-- Denne section indeholder information om mig. Den skal ikke være med i mobil versionen. -->
@@ -265,7 +268,7 @@
                 <div>Besked</div>
                 <button class="black-send-button">Send</button>
             </form>
-            
+
             <div>
                 <i class="fa-brands fa-linkedin-in"></i>
                 <i class="fa-solid fa-at"></i>

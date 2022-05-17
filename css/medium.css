@@ -1,0 +1,29 @@
+/* Specifikt til tablets - Fuld HTML*/
+
+@media only screen and (min-width: 43rem) {
+    
+    header{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    nav{
+        gap: 1rem;
+    }
+    
+    .hide{
+        display: block !important; 
+    }
+    /* 
+    Det gør at den overrider, 
+    men det vil sige at hvis jeg 
+    lavede en mediaquery 
+    ved en højere breaking point, 
+    ville det override der.
+    */
+    
+    section{
+        height: 500px;
+        background-color: aqua;
+    }
+    }

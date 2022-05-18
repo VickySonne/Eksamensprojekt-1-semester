@@ -1,6 +1,6 @@
 /* Specifikt til tablets - Fuld HTML*/
 
-@media only screen and (min-width: 43rem) {
+@media only screen and (min-width: 426px) { /* Stylet til ipad Air */
     
     body{
         height: calc(100vh - 4rem); /* For at undgå overflow på y*/
@@ -11,24 +11,24 @@
         padding-right: 1rem;
         height: 4rem;
     }
-    
-    nav{
-        gap: 1rem;
+
+    .hide-mobil{
+        display: block; 
     }
     
-    .hide{
-        display: block !important; 
-    }
     /* 
-    Det gør at den overrider, 
+    !important gør at den overrider, 
     men det vil sige at hvis jeg 
     lavede en mediaquery 
     ved en højere breaking point, 
     ville det override der.
     */
+
+    .hide-tablet{
+        display: none;
+    }
     
     section{
-        height: 500px;
-        background-color: aqua;
+        height: calc(95vh - 4rem);
     }
     }

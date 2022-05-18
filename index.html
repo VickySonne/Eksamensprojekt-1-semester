@@ -22,12 +22,12 @@
     <header> 
         <div>
             <div>&lt;SDS&gt;</div> <!-- Mangler at sætte logo ind-->
-            <h1 class="hide">&lt;h1&gt;Sonne Design Solutions&lt;/h1&gt;</h1>
+            <p class="hide-mobil">&lt;h1&gt;Sonne Design Solutions&lt;/h1&gt;</p>
         </div>
 
         <nav>
-            <li class="hide"><a href="">Forside</a></li>
-            <li class="hide"><a href="">Om mig</a></li>
+            <li class="hide-mobil"><a href="">Forside</a></li>
+            <li class="hide-mobil"><a href="">Om mig</a></li>
             <li><a href="">Kompetencer</a></li>
             <li><a href="">Projekter</a></li>
             <li><a href="">Kontakt</a></li>
@@ -40,7 +40,7 @@
         Denne section indeholder kontakt siden tilvenstre for forsiden.
         Den skal ikke være med i mobil versionen.
         -->
-        <section id="contact-white" class="contact hide light-theme">
+        <section id="contact-white" class="contact hide-tablet light-theme">
             <div class="icon-wrapper">
                 <div class="line"></div>
                 <div class="icon-style"><i class="fa-brands fa-linkedin-in"></i></div>
@@ -80,16 +80,16 @@
             <h1 class="name">Vicky Sonne Thomsen</h1>
 
             <div>            
-                <button class="black-button hide">sort rund knap</button>
+                <button class="black-button hide-tablet">sort rund knap</button>
             </div>
 
-            <div class="hide">
+            <div class="hide-mobil">
                 <h2 > 
                     Har du et projekt du skal have på benene 
                     eller er jeg din kommende medarbejder, 
                     så er du altid velkommen til at kontakte mig.
                 </h2>
-                <h1>Du kan kontakte mig her</h1>
+                <h1 class="hide-tablet">Du kan kontakte mig her</h1>
             </div>
 
             <div class="intro">
@@ -98,13 +98,13 @@
                     freelancer med passion for konceptudvikling, 
                     UI og UX
                 </h2>
-                <h1 class="hide">Lær mig bedre at kende</h1>
+                <h1 class="hide-tablet">Lær mig bedre at kende</h1>
             </div>
 
             
             <button class="contact-splash">Kontakt mig</button>
             
-            <button class="white-button hide">hvid rund knap</button>
+            <button class="white-button hide-tablet">hvid rund knap</button>
 
             <div class="scroll-button-wrapper">
                 <div class="scroll-button">
@@ -115,18 +115,18 @@
 
             <div class="icon-splash">
                 <div class="icon-wrapper">
-                    <div class="line"></div>
-                    <div class="icon-style"><i class="icon-color fa-brands fa-linkedin-in"></i></div>
-                    <div class="icon-style"><i class="icon-color fa-solid fa-at"></i></div>
-                    <div class="icon-style"><i class="icon-color fa-solid fa-phone"></i></div>
-                    <div class="line"></div>
+                    <div class="line-dark"></div>
+                    <div class="icon-style-dark"><i class="icon-color-dark fa-brands fa-linkedin-in"></i></div>
+                    <div class="icon-style-dark"><i class="icon-color-dark fa-solid fa-at"></i></div>
+                    <div class="icon-style-dark"><i class="icon-color-dark fa-solid fa-phone"></i></div>
+                    <div class="line-dark"></div>
                 </div>
             </div>
             
         </section>
 
         <!-- Denne section indeholder information om mig. Den skal ikke være med i mobil versionen. -->
-        <section id="about" class="hide">
+        <section id="about" class="hide-mobil">
             <div>
                 <h1>Hvem er jeg?</h1>
                 <p>Jeg er en ung kvinde på snart 26 år. 
@@ -151,7 +151,7 @@
 
         <!--  Denne section indeholder mine kompetencer og færdigheder. Det skal være en mindre version på mobilen. -->
         <section id="skills">
-            <div class="hide">
+            <div class="hide-mobil">
                 <div>01.</div>
                 <div>border</div>
                 <h3>Kompetencer</h3>
@@ -171,40 +171,70 @@
                 <img class="foto-image" src="" alt="en person der tager et billede af en anden person der tager et billede">
 
                 <div class="concept-text">
-                    <h6>Koncept udvikling</h6>
-                    <div></div>
+                    <h6 class="skills-text">Koncept udvikling</h6>
+                    <div class="bar">
+                        <div class="bar-fill amount-35">
+                            <div class="bar-border">                                
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="ui-text">
-                    <h6>UI og UX</h6>
-                    <div></div>
+                    <h6 class="skills-text">UI og UX</h6>
+                    <div class="bar">
+                        <div class="bar-fill amount-50">
+                            <div class="bar-border">                                
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="proto-text">
-                    <h6>Prototyper</h6>
-                    <div></div>
+                    <h6 class="skills-text">Prototyper</h6>
+                    <div class="bar">
+                        <div class="bar-fill amount-65">
+                            <div class="bar-border">                                
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="html-text">
-                    <h6>HTML og CSS</h6>
-                    <div></div>
+                    <h6 class="skills-text">HTML og CSS</h6>
+                    <div class="bar">
+                        <div class="bar-fill amount-50">
+                            <div class="bar-border">                                
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="ani-text">
-                    <h6>Grafisk design</h6>
-                    <div></div>
+                    <h6 class="skills-text">Grafisk design</h6>
+                    <div class="bar">
+                        <div class="bar-fill amount-35">
+                            <div class="bar-border">                                
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="foto-text">
-                    <h6>Foto og video</h6>
-                    <div></div>
+                    <h6 class="skills-text">Foto og video</h6>
+                    <div class="bar">
+                        <div class="bar-fill">
+                            <div class="bar-border">                                
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Denne section indeholder mine projekter arrangeret i en form for horizontal scroll -->
         <section id="projects">
-            <div class="hide">
+            <div class="hide-mobil">
                 <div>02.</div>
                 <div>border</div>
                 <h3>Projekter</h3>
@@ -269,13 +299,13 @@
 
         <!-- Denne section indeholder kontakt siden helt til slut i højre side af hjemmesiden, eller bunden af mobil versionen. -->
         <section id="contact-black" class="grid-contact-black contact">
-            <div class="hide">
+            <div class="hide-mobil">
                 <div>03.</div>
                 <div>border</div>
                 <h3>Kontakt</h3>
             </div>
 
-            <address class="hide">
+            <address class="hide-mobil">
                 <h4>Kontakt information</h4>
                 <P>
                     Du er altid velkommen til at kontakte mig, 
@@ -289,20 +319,28 @@
             </address>
 
             <form>
-                <h4>Kontakt formular</h4>
-                <div>Navn</div>
-                <div>Email</div>
-                <div>Emne</div>
-                <div>Besked</div>
-                <button class="black-send-button">Send</button>
+                <div class="contact-heading-wrapper">
+                    <h4>Kontakt formular</h4>
+                </div>                
+                <div class="info-wrapper">
+                    <div class="info">Navn</div>
+                    <div class="info">Email</div>
+                    <div class="info">Emne</div>
+                    <div class="message">Besked</div>
+                </div>
+                <div class="send-wrapper">
+                    <button class="black-send-button">Send</button>
+                </div>                           
             </form>
 
-            <div class="icon-wrapper">
-                <div class="line"></div>
-                <div class="icon-style"><i class="fa-brands fa-linkedin-in"></i></div>
-                <div class="icon-style"><i class="fa-solid fa-at"></i></div>
-                <div class="icon-style"><i class="fa-solid fa-phone"></i></div>
-                <div class="line"></div>
+            <div class="icon-contact">
+                <div class="icon-wrapper">
+                    <div class="line-light"></div>
+                    <div class="icon-style-light"><i class="icon-color-light fa-brands fa-linkedin-in"></i></div>
+                    <div class="icon-style-light"><i class="icon-color-light fa-solid fa-at"></i></div>
+                    <div class="icon-style-light"><i class="icon-color-light fa-solid fa-phone"></i></div>
+                    <div class="line-light"></div>
+                </div>
             </div>
         </section>
     </main>

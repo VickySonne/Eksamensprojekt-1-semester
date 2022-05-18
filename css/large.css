@@ -13,4 +13,8 @@
         min-width: 500px;
         background-color: aqua;
     }
+
+    .hide-tablet{
+        display: block;
+    }
     }

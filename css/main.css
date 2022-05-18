@@ -11,7 +11,11 @@ img{
     max-width: 100%;
 }
 
-.hide{
+.hide-mobil{
+    display: none;
+}
+
+.hide-tablet{
     display: none;
 }
 
@@ -39,8 +43,7 @@ header{
     padding-right: 1rem;
     color: #192233;
     font-weight: 500;
-    
-}
+    }
 
 nav{
     display: flex;
@@ -74,7 +77,7 @@ section{
 
 .light-theme{
     background-color: rgb(255,255,255);
-    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(225,225,225,1) 100%);
+    background: radial-gradient(ellipse, rgba(255,255,255,1) 0%, rgba(225,225,225,1) 100%);
     color:#192233;
 }
 
@@ -83,12 +86,18 @@ section{
 h1{
     font-size: 2rem;
     font-weight: 600;
+    text-shadow: 5px 5px 12px rgba(0,0,0,0.5);
 }
 
-h2,
+h2{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
 h4{
     font-size: 1.5rem;
     font-weight: 500;
+    text-shadow: 5px 5px 12px rgba(0,0,0,1);
 }
 
 /* CSS og grid til forside */
@@ -135,6 +144,8 @@ h4{
     align-items: center;
     justify-content: center;
     transform: rotate(-90deg);
+    box-shadow: -5px 5px 12px #000;
+    font-weight: 600;
 } 
 
 .scroll-button:hover{
@@ -146,15 +157,16 @@ h4{
     grid-column-end: 4;
     grid-row-start: 3;
     border: solid 2px #151515;
-    height: 4rem;
-    width: 10rem;
+    height: 3.5rem;
+    width: 9.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
-    font-weight: 500;
+    font-weight: 600;
     border-radius: 2px;
     background-color: #E1E8EE;
+    box-shadow: 5px 5px 12px #000;
 }
 
 .contact-splash:hover{
@@ -228,7 +240,12 @@ h4{
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
-    background: linear-gradient(rgba(21, 21, 21,0.0), #151515); 
+    background: linear-gradient(rgba(21, 21, 21,0.0), #151515);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 1rem;
+    padding-bottom: 1.5rem;
 }
 
 .ui-text{
@@ -236,6 +253,12 @@ h4{
     grid-column-end: 3;
     grid-row-start: 1;
     background: linear-gradient(rgba(21, 21, 21,0.0), #151515);    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 1rem;
+    padding-bottom: 1.5rem;
+
 }
 
 .proto-text{
@@ -243,6 +266,11 @@ h4{
     grid-column-end: 2;
     grid-row-start: 2;
     background-image: linear-gradient(rgba(21, 21, 21,0.0), #151515); 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 1rem;
+    padding-bottom: 1.5rem;
 }
 
 .html-text{
@@ -250,6 +278,11 @@ h4{
     grid-column-end: 3;
     grid-row-start: 2;
     background-image: linear-gradient(rgba(21, 21, 21,0.0), #151515); 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 1rem;
+    padding-bottom: 1.5rem;
 }
 
 .ani-text{
@@ -257,6 +290,11 @@ h4{
     grid-column-end: 2;
     grid-row-start: 3;
     background-image: linear-gradient(rgba(21, 21, 21,0.0), #151515); 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 1rem;
+    padding-bottom: 1.5rem;
 }
 
 .foto-text{
@@ -264,6 +302,11 @@ h4{
     grid-column-end: 3;
     grid-row-start: 3;
     background-image: linear-gradient(rgba(21, 21, 21,0.0), #151515); 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 1rem;
+    padding-bottom: 1.5rem;
 }
 
 /* Grid til kontakt */
@@ -271,19 +314,88 @@ h4{
 .grid-contact-black{
     display: grid;
     grid-template-columns: 3.5rem auto 3.5rem;
-}
-
-form{
-    grid-column-start: 2;
-    grid-column-end: 3;
+    grid-template-rows: 1fr;
+    height: 55vh;
 }
 
 .icon-contact{
     grid-column-start: 1;
     grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
 }
 
-/* Icon graffik */
+form{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    border: solid 2px #151515;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0.5rem 1rem 1rem 1rem;
+    margin-bottom: 4.5rem;
+    height: 24rem;
+    background: rgb(48,48,50);
+    background: radial-gradient(ellipse at 50% 45%, rgba(48,48,50,1) 0%, rgba(21,21,21,1) 100%);
+    box-shadow: 10px 10px 24px #000;
+}
+
+.contact-heading-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.info-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.info{
+    border: solid 2px rgba(21, 21, 21,0.5);
+    border-radius: 2px;
+    color: rgba(225, 232, 238, 0.5);
+    height: 2rem;
+    padding-left: 0.5rem;
+    box-shadow: inset 5px 5px 12px rgba(21, 21, 21,0.5);
+}
+
+.message{
+    border: solid 2px rgba(21, 21, 21,0.5);
+    border-radius: 2px;
+    color: rgba(225, 232, 238, 0.5);
+    height: 6rem;
+    padding-left: 0.5rem;
+    box-shadow: inset 5px 5px 12px rgba(21, 21, 21,0.5);
+}
+
+.send-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.black-send-button{
+    border: solid 2px #151515;
+    border-radius: 2px;
+    height: 3rem;
+    width: 9.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(48,48,50);
+    background: radial-gradient(ellipse, rgba(48,48,50,1) 0%, rgba(21,21,21,1) 100%);
+    box-shadow: 5px 5px 12px #000;
+}
+
+/* Icon graffik - mørk*/
 
 .icon-wrapper{
     display: flex;
@@ -292,13 +404,13 @@ form{
     gap: 0.5rem;
 }
 
-.line{
+.line-dark{
     background-color: #48546E;
     width: 2px;
     height: 5rem;
 }
 
-.icon-style{
+.icon-style-dark{
     border: solid 2px #48546E; /* for ikke nogen border uden solid*/
     border-radius: 50%;
     width: 32px;
@@ -308,6 +420,75 @@ form{
     justify-content: center;
 }
 
-.icon-color{
-    color: #48546E;
+.icon-color-dark{
+    color: #192233;
+    text-shadow: 3px 3px 10px rgba(0,0,0,0.5);
+}
+
+/* Icon graffik - lys*/
+
+.line-light{
+    background-color: #CAD7E4;
+    width: 2px;
+    height: 5rem;
+}
+
+.icon-style-light{
+    border: solid 2px #CAD7E4; /* for ikke nogen border uden solid*/
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-color-light{
+    color: #CAD7E4;
+    text-shadow: 3px 3px 10px rgba(0,0,0,0.5);
+}
+
+/* CSS til progressbar */
+
+.bar{
+    height: 1rem;
+    width: 9rem;
+    border-radius: 50px;
+    background-color: #E1E8EE;
+    display: flex;
+    align-items: center;
+    box-shadow: 5px 5px 12px #000;
+}
+
+.bar-fill{
+    height: 100%;
+    width: 25%;
+    background-color: #48546E;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+}
+
+.amount-35{
+    width: 35%;
+}
+
+.amount-50{
+    width: 50%;
+}
+
+.amount-65{
+    width: 65%;
+}
+
+.bar-border{
+    border: solid 2px #151515;
+    background-color: none;
+    border-radius: 50px;
+    height: 1rem;
+    width: 9rem;
+}
+
+.skills-text{
+    padding-left: 0.5rem;
+    padding-bottom: 0.2rem;
 }

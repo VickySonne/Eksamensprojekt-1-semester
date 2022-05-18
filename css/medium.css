@@ -31,4 +31,61 @@
     section{
         height: calc(95vh - 4rem);
     }
+
+    h1{
+        font-size: 3rem;
+    }
+
+    h2{
+        font-size: 2rem;
+    }
+    
+    /* CSS og Grid til forside*/
+
+    .grid-splash{
+        grid-template-columns: 1fr 2fr 2fr 1fr;
+        grid-template-rows: 1fr 2fr 2fr 2fr 1fr;
+    }
+
+    .name{
+        padding-left: 2rem;
+    }
+
+    .intro{
+        padding-left: 2rem;
+    }
+    
+    .contact-promt{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        padding-left: 2rem;
+    }
+
+    .contact-splash{
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 4;
+    }
+
+    .scroll-button-wrapper{
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 5;
+    }
+
+    .icon-splash{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 6;
+        justify-content: flex-start;
+        padding-left: 1rem;
+    }
+
+
+
+
+
+
     }

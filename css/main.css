@@ -42,7 +42,7 @@ header{
     padding-left: 1rem;
     padding-right: 1rem;
     color: #192233;
-    font-weight: 500;
+    font-weight: 600;
     }
 
 nav{
@@ -153,10 +153,14 @@ h4{
     background-color: #CAD7E4;
 }
 
-.contact-splash{
+.contact-splash-wrapper{    
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 3;
+    display: flex;
+}
+
+.contact-splash{
     border: solid 2px #151515;
     height: 3.5rem;
     width: 9.5rem;

@@ -91,6 +91,7 @@
         grid-template-columns: 1fr 0.25fr 1fr;
         grid-template-rows: 1fr 1fr 4fr 1fr 1fr;
         padding: 2rem;
+        height: calc(80vh - 4rem);
     }
 
     .who{
@@ -124,10 +125,86 @@
         border-radius: 2px;
     }
     
+    /*Grafiske vertikale headings*/
 
+    .numbers-light{
+        font-size: 4rem;
+        font-weight: 800;
+    }
 
+    .line-horizontal{
+        width: 5rem;
+        height: 3px;
+        margin-top: 7px;
+        background-color: #CAD7E4;
+    }
 
+    .text-light{
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
 
+    .headings-wrapper{
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-top: 3px;
+    }
+
+    .headings-box{
+        width: 100vw;
+        height: 8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* css til kompetence sektionen*/
+    .grid-skills{
+        height: calc(100% - 8rem);
+    }
+
+    /* css til kontakt sektionen */
+    
+    .contact{
+        height: calc(100% - 8rem);
+    }
+    
+    form{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    .grid-contact-black{
+        display: grid;
+        grid-template-columns: 3.5rem auto 3.5rem;
+        grid-template-rows: 1fr 2fr;
+    }
+
+    .icon-contact{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    .address-black{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    h6{
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+    
 
 
 }

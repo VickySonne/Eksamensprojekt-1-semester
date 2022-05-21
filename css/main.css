@@ -64,7 +64,6 @@ a{
 main{ /*Mørkt tema*/
     display: flex;
     flex-direction: column;
-    gap: 1rem;
     background: rgb(48,48,50);
     background: radial-gradient(circle, rgba(48,48,50,1) 0%, rgba(21,21,21,1) 100%);
     color:#E1E8EE;
@@ -316,11 +315,14 @@ h4{
 
 /* Grid til kontakt */
 
+.contact{
+    height: 100%;
+}
+
 .grid-contact-black{
     display: grid;
     grid-template-columns: 3.5rem auto 3.5rem;
     grid-template-rows: 1fr;
-    height: 55vh;
 }
 
 .icon-contact{

@@ -1,20 +1,81 @@
 /*Specifikt til computere - Fuld HTML*/
 
-@media only screen and (min-width: 62rem) {
+@media only screen and (min-width: 821px) {
     
-    main{
-        flex-direction: row;
-        overflow-x: scroll;
-        height: 100%;
-    }
-    
-    section{
-        height: 100%;
-        min-width: 500px;
-        background-color: aqua;
-    }
-
     .hide-tablet{
         display: block;
     }
+
+    main{
+        flex-direction: row;
+        overflow-x: scroll;
+        gap: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: calc(100vh - 4rem);
+    }
+
+    #contact-white{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    #splash{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    #about{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    #skills{
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    #projects{
+        grid-column-start: 5;
+        grid-column-end: 6;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    #contact-black{
+        grid-column-start: 6;
+        grid-column-end: 7;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    
+    section{
+        width: 100vw;
+        background-color: aqua;
+    }
+
+    h1{
+       font-size: 2rem; 
+    }
+
+    h2{
+        font-size: 1.5rem;
+    }
+
+    /*contact grids*/
+    .grid-contact-light{
+        display: grid;
+        grid-template-columns: 3.5rem auto 3.5rem;
+        grid-template-rows: 1fr;
+    }
+
+
     }

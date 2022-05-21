@@ -35,6 +35,11 @@
     h2{
         font-size: 2rem;
     }
+
+    h6{
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
     
     /* CSS og Grid til forside*/
 
@@ -165,18 +170,18 @@
     .contact{
         height: calc(100% - 8rem);
     }
-    
-    form{
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start: 2;
-        grid-row-end: 3;
-    }
-
     .grid-contact-black{
         display: grid;
         grid-template-columns: 3.5rem auto 3.5rem;
         grid-template-rows: 1fr 2fr;
+        height: 100%;
+    }
+
+    .form-black{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
     }
 
     .icon-contact{
@@ -196,10 +201,6 @@
         gap: 0.5rem;
     }
 
-    h6{
-        font-weight: 600;
-        font-size: 1.2rem;
-    }
     
 
 

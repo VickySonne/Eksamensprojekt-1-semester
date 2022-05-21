@@ -41,7 +41,7 @@
         Den skal ikke være med i mobil versionen.
         -->
         <section id="contact-white" class="contact hide-tablet light-theme grid-contact-light">
-            <div class="icon-contact">
+            <div class="icon-contact-light">
                 <div class="icon-wrapper">
                     <div class="line-dark"></div>
                     <div class="icon-style-dark"><i class="icon-color-dark fa-brands fa-linkedin-in"></i></div>
@@ -51,86 +51,96 @@
                 </div>
             </div>
 
-            <address>
+            <address class="hide-mobil address-light">
                 <h4>Kontakt information</h4>
-                <P>
+                <p>
                     Du er altid velkommen til at kontakte mig, 
                     hvis du har spørgsmål eller vil høre mere om mig 
                     og det jeg laver som multimediedesigner. 
-                    Du kan fange mig på email eller telefon mellem 9 og 17.  
+                </p>
+                <p>
+                    Du kan fange mig på email eller telefon mellem 9 og 17.
                 </P>
-                <h6>&lt;Email&gt; vicky@sonnedesignsolutions.com &lt;/Email&gt;</h6>
-                <h6>&lt;Mobil&gt; 4292 3630 &lt;/Mobil&gt;</h6>
-                <h6>&lt;Addresse&gt; Ørnfeltvej 13, 5320 Odense M &lt;/Addresse&gt;</h6>
+                <div>                   
+                    <h6>&lt;Email&gt; vicky@sonnedesignsolutions.com &lt;/Email&gt;</h6>
+                    <h6>&lt;Mobil&gt; 4292 3630 &lt;/Mobil&gt;</h6>
+                    <h6>&lt;Addresse&gt; Ørnfeltvej 13, 5320 Odense M &lt;/Addresse&gt;</h6>
+                </div> 
             </address>
 
-            <form class="light-theme">
-                <h4>Kontakt formular</h4>
-                <div>Navn</div>
-                <div>Email</div>
-                <div>Emne</div>
-                <div>Besked</div>
-                <button class="white-send-button">Send</button>
+            <form class="form-light">
+                <div class="contact-heading-wrapper">
+                    <h4>Kontakt formular</h4>
+                </div>                
+                <div class="info-wrapper">
+                    <div class="info-light">Navn</div>
+                    <div class="info-light">Email</div>
+                    <div class="info-light">Emne</div>
+                    <div class="message-light">Besked</div>
+                </div>
+                <div class="send-wrapper">
+                    <button class="light-send-button">Send</button>
+                </div>                           
             </form>
         </section>
 
         <!-- Denne section indeholder forsiden-->
         <section id="splash" class="grid-splash light-theme">
 
-            <img class="side-portrait" src="https://fakeimg.pl/320x500/">
+            <img class="side-portrait hide-website" src="https://fakeimg.pl/320x500/">
+            <!-- <img class="portrait" src="https://fakeimg.pl/700x700/"> -->
 
             <h1 class="name">Vicky Sonne Thomsen</h1>
 
             <div>            
-                <button class="black-button hide-tablet">sort rund knap</button>
+                <button class="buttons black-button hide-tablet">
+                    <i class="icon-color-light icon-size fa-solid fa-arrow-left"></i>
+                </button>
             </div>
+            <h2 class="hide-mobil contact-promt"> 
+                Har du et projekt du skal have på benene 
+                eller er jeg din kommende medarbejder, 
+                så er du altid velkommen til at kontakte mig
+            </h2>
+            <h1 class="hide-mobil hide-tablet contact-here">Du kan kontakte mig her</h1>
+            
+            <h2 class="intro">
+                Kreativ multimediedesigner og 
+                freelancer med passion for konceptudvikling, 
+                UI og UX
+            </h2>
+            <h1 class="hide-tablet more-about-me">Lær mig bedre at kende</h1>
 
-            <div class="hide-mobil contact-promt">
-                <h2 > 
-                    Har du et projekt du skal have på benene 
-                    eller er jeg din kommende medarbejder, 
-                    så er du altid velkommen til at kontakte mig
-                </h2>
-                <h1 class="hide-tablet">Du kan kontakte mig her</h1>
-            </div>
-
-            <div class="intro">
-                <h2 >
-                    Kreativ multimediedesigner og 
-                    freelancer med passion for konceptudvikling, 
-                    UI og UX
-                </h2>
-                <h1 class="hide-tablet">Lær mig bedre at kende</h1>
-            </div>
-
-            <div class="contact-splash-wrapper">
+            <div class="contact-splash-wrapper hide-website">
                 <button class="contact-splash">Kontakt mig</button>
             </div>
 
-            <button class="white-button hide-tablet">hvid rund knap</button>
+            <button class="buttons white-button hide-tablet">
+                <i class="icon-color-dark icon-size icon-direction fa-solid fa-arrow-left"></i>
+            </button>
 
             <div class="scroll-button-wrapper">
                 <div class="scroll-button">
-                    <i class="fa-solid fa-arrow-left"></i>
+                    <i class="icon-direction fa-solid fa-arrow-left"></i>
                     <button>Scroll</button>                
                 </div>
             </div>
 
-            <div class="icon-splash">
+            <div class="icon-splash hide-website">
                 <div class="icon-wrapper">
                     <div class="line-dark"></div>
-                    <div class="icon-style-dark"><i class="icon-color-dark fa-brands fa-linkedin-in"></i></div>
+                    <div class="icon-style-dark"><i class=" fa-brands fa-linkedin-in"></i></div>
                     <div class="icon-style-dark"><i class="icon-color-dark fa-solid fa-at"></i></div>
                     <div class="icon-style-dark"><i class="icon-color-dark fa-solid fa-phone"></i></div>
                     <div class="line-dark"></div>
-                </div>
+                </div>icon-color-dark
             </div>
             
         </section>
 
         <!-- Denne section indeholder information om mig. Den skal ikke være med i mobil versionen. -->
         <section id="about" class="hide-mobil about-grid">
-            <img class="about-image" src="https://fakeimg.pl/500x900/" alt="Profil Billede af Vicky Thomsen der skifter mellem 3 billeder når man holder over det">
+            <img class="about-image" src="https://fakeimg.pl/500x500/" alt="Profil Billede af Vicky Thomsen der skifter mellem 3 billeder når man holder over det">
             <h1 class="who">Hvem er jeg?</h1>
             <div class="about-info">
                 <p>
@@ -164,7 +174,7 @@
                 <div class="hide-mobil headings-wrapper">
                     <div class="numbers-light">01.</div>
                     <div class="line-horizontal"></div>
-                    <h3 class="text-light">Kompetencer</h3>
+                    <h3 class="text-light extra-padding">Kompetencer</h3>
                 </div>
             </div>
 
@@ -322,18 +332,22 @@
             <div class="grid-contact-black">
                 <address class="hide-mobil address-black">
                     <h4>Kontakt information</h4>
-                    <P>
+                    <p>
                         Du er altid velkommen til at kontakte mig, 
                         hvis du har spørgsmål eller vil høre mere om mig 
                         og det jeg laver som multimediedesigner. 
-                        Du kan fange mig på email eller telefon mellem 9 og 17.  
+                    </p>
+                    <p>
+                        Du kan fange mig på email eller telefon mellem 9 og 17.
                     </P>
-                    <h6>&lt;Email&gt; vicky@sonnedesignsolutions.com &lt;/Email&gt;</h6>
-                    <h6>&lt;Mobil&gt; 4292 3630 &lt;/Mobil&gt;</h6>
-                    <h6>&lt;Addresse&gt; Ørnfeltvej 13, 5320 Odense M &lt;/Addresse&gt;</h6>
+                    <div>                   
+                        <h6>&lt;Email&gt; vicky@sonnedesignsolutions.com &lt;/Email&gt;</h6>
+                        <h6>&lt;Mobil&gt; 4292 3630 &lt;/Mobil&gt;</h6>
+                        <h6>&lt;Addresse&gt; Ørnfeltvej 13, 5320 Odense M &lt;/Addresse&gt;</h6>
+                    </div> 
                 </address>
 
-                <form>
+                <form class="form-black">
                     <div class="contact-heading-wrapper">
                         <h4>Kontakt formular</h4>
                     </div>                

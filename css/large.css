@@ -22,16 +22,12 @@
     main{
         height: calc(100vh - 4rem);
         overflow-x: scroll;
+        scroll-behavior: smooth;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr;
         background-color: aqua;
     }
-
-    /*section{
-        width: 100vw;
-        background-color: greenyellow;
-    }*/
 
     #contact-white{
         height: 100%;
@@ -40,7 +36,6 @@
         grid-column-end: 2;
         grid-row-start: 1;
         grid-row-end: 2;
-        background-color: brown;
     }
 
     #splash{
@@ -60,7 +55,6 @@
         grid-column-end: 4;
         grid-row-start: 1;
         grid-row-end: 2;
-        background-color: darkgoldenrod;
     }
 
     #skills{
@@ -92,7 +86,6 @@
         grid-column-end: 7;
         grid-row-start: 1;
         grid-row-end: 2;
-        background-color: indianred;
     }
 
     h1{
@@ -104,6 +97,7 @@
     }
 
     /*CSS til forside*/
+
     .grid-splash{
         grid-template-rows: 1fr 2fr 1fr 1fr 3fr 1fr;
     }
@@ -204,6 +198,11 @@
         height: 100%;
         padding: 0 2rem;
     }
+
+    /* css og grids til kompetence sektionen*/
+    .grid-skills{
+    }
+
     
     /*contact grids*/
     .contact{
@@ -237,6 +236,7 @@
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
+        padding: 1rem;
     }
 
     .form-light{

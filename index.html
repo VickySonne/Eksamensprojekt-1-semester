@@ -26,11 +26,11 @@
         </div>
 
         <nav>
-            <li class="hide-mobil"><a href="">Forside</a></li>
-            <li class="hide-mobil"><a href="">Om mig</a></li>
-            <li><a href="">Kompetencer</a></li>
-            <li><a href="">Projekter</a></li>
-            <li><a href="">Kontakt</a></li>
+            <li class="hide-mobil"><a href="#splash">Forside</a></li>
+            <li class="hide-mobil"><a href="#about">Om mig</a></li>
+            <li><a href="#skills">Kompetencer</a></li>
+            <li><a href="#projects">Projekter</a></li>
+            <li><a href="#contact-black">Kontakt</a></li>
         </nav>
     </header>
 
@@ -93,9 +93,9 @@
             <h1 class="name">Vicky Sonne Thomsen</h1>
 
             <div>            
-                <button class="buttons black-button hide-tablet">
+                <a href="#contact-white" class="buttons black-button hide-tablet">
                     <i class="icon-color-light icon-size fa-solid fa-arrow-left"></i>
-                </button>
+                </a>
             </div>
             <h2 class="hide-mobil contact-promt"> 
                 Har du et projekt du skal have på benene 
@@ -115,9 +115,9 @@
                 <button class="contact-splash">Kontakt mig</button>
             </div>
 
-            <button class="buttons white-button hide-tablet">
+            <a href="#about" class="buttons white-button hide-tablet">
                 <i class="icon-color-dark icon-size icon-direction fa-solid fa-arrow-left"></i>
-            </button>
+            </a>
 
             <div class="scroll-button-wrapper">
                 <div class="scroll-button">
@@ -169,16 +169,16 @@
         </section>
 
         <!--  Denne section indeholder mine kompetencer og færdigheder. Det skal være en mindre version på mobilen. -->
-        <section id="skills" >
-            <div class="headings-box">
-                <div class="hide-mobil headings-wrapper">
-                    <div class="numbers-light">01.</div>
-                    <div class="line-horizontal"></div>
-                    <h3 class="text-light extra-padding">Kompetencer</h3>
+        <section id="skills">
+            <div class="grid-skills">
+                <div class="headings-box">
+                    <div class="hide-mobil headings-wrapper">
+                        <div class="numbers-light">01.</div>
+                        <div class="line-horizontal"></div>
+                        <h3 class="text-light extra-padding">Kompetencer</h3>
+                    </div>
                 </div>
-            </div>
 
-            <div id="kompetencer" class="grid-skills">
                 <img class="concept-image" src="" alt="en person der sidder og brainstomer på et papir">
 
                 <img class="ui-image" src="" alt="en person der sidder og designer en wireframe til en hjemmeside">
@@ -374,6 +374,7 @@
             </div>    
         </section>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
 

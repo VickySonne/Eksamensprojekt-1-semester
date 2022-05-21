@@ -314,13 +314,9 @@ h4{
 
 /* Grid til kontakt */
 
-.contact{
-    height: 100%;
-}
-
 .grid-contact-black{
     display: grid;
-    grid-template-columns: 3.5rem auto 3.5rem;
+    grid-template-columns: 3.5rem 1fr 3.5rem;
     grid-template-rows: 1fr;
 }
 

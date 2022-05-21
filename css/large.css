@@ -5,14 +5,19 @@
     .hide-tablet{
         display: block;
     }
+    body{
+        height: calc(100vh - 4rem);
+    }
 
     main{
+        height: 100%;
         flex-direction: row;
         overflow-x: scroll;
         gap: 1rem;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: calc(100vh - 4rem);
+        
     }
 
     #contact-white{
@@ -71,11 +76,52 @@
     }
 
     /*contact grids*/
+    .contact{
+        display: flex;
+        flex-direction: row;
+    }
+    
     .grid-contact-light{
         display: grid;
         grid-template-columns: 3.5rem auto 3.5rem;
         grid-template-rows: 1fr;
     }
 
-
+    /* css til vertikale headings*/
+    
+    .line-horizontal{
+        width: 3px;
+        height: 5rem;
+        margin-top: 7px;
+        background-color: #CAD7E4;
     }
+
+    .text-light{
+        transform: rotate(-90deg);
+    }
+
+    .headings-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.5rem;
+        margin: 0;
+    }
+
+    .headings-box{
+        width: 100;
+        height: 8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+
+
+
+
+
+
+}

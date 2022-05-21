@@ -1,10 +1,6 @@
 /* Specifikt til tablets - Fuld HTML*/
 
 @media only screen and (min-width: 426px) { /* Stylet til ipad Air */
-    
-    body{
-        height: calc(100vh - 4rem); /* For at undgå overflow på y*/
-    }
 
     header{
         padding-left: 1rem;

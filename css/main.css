@@ -19,8 +19,7 @@ img{
     display: none;
 }
 
-body{
-    height: calc(100vh - 3rem); /* For at undgå overflow på y*/
+body{    
     margin: 0;
     font-family: acumin-pro, sans-serif;
 }

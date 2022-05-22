@@ -296,9 +296,11 @@
         grid-column-end: 3;
         grid-row-start: 2;
         grid-row-end: 4;
-        background-color: blueviolet;
+        background: rgb(48,48,50);
+        background: radial-gradient(circle at 50% 35%, rgba(48,48,50,1) 0%, rgba(21,21,21,1) 100%);
         border: solid 2px #151515;
         border-radius: 2px;
+        box-shadow: 10px 10px 24px #000;
     }
     
     .box-small{
@@ -316,30 +318,18 @@
         max-width: 30rem;
     }
     
-    .project-title-two{
+    .project-title{
         grid-column-start: 1;
         grid-column-end: 4;
         grid-row-start: 3;
         grid-row-end: 5;
-        font-size: 1.5rem;
-        font-weight: 700;
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
-        
-    }
-    
-    .project-title-one{
-        grid-column-start: 1;
-        grid-column-end: 4;
-        grid-row-start: 3;
-        grid-row-end: 5;
-        font-size: 1.5rem;
+        font-size: 2rem;
         font-weight: 700;
         display: flex;
         align-items: flex-end;
         justify-content: center;
         text-align: center;
+        text-shadow: 5px 5px 12px rgba(0,0,0,1);
     }
     
     .details{
@@ -354,20 +344,25 @@
         gap: 0.5rem;
     }
     
-    .grid-box > div{
+    .grid-box > .details{
         color: transparent;
     }
     
     .grid-box > cite{
-        color:#151515
+        color:#E1E8EE;
     }
     
-    .grid-box:hover > div{
-        color: #151515
+    .grid-box:hover > .details{
+        color: #E1E8EE;
     }
     
     .grid-box:hover > cite{
         color: transparent;
+        text-shadow: 5px 5px 12px rgba(0,0,0,0);
+    }
+
+    .grid-box:hover > .details{
+        background: linear-gradient(rgba(21, 21, 21,0.0), #151515);
     }
 
     /* css til kontakt sektionen */

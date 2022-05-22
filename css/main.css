@@ -54,6 +54,11 @@ li{
     list-style-type: none;
 }
 
+li:hover{
+    color: #48546E;
+    font-weight: 700;
+}
+
 a{
     text-decoration: none;
     cursor: pointer;
@@ -95,10 +100,14 @@ h2{
 
 h4{
     font-size: 1.5rem;
-    font-weight: 500;
-    text-shadow: 5px 5px 12px rgba(0,0,0,1);
+    font-weight: 600;
+    text-shadow: 5px 5px 12px rgba(0,0,0,0.5);
 }
 
+h5{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
 /* CSS og grid til forside */
 .grid-splash{
     display: grid;
@@ -134,7 +143,7 @@ h4{
 }
 
 .scroll-button{
-    background-color: #E1E8EE;
+    background-color: #CAD7E4;
     border: solid 2px #151515;
     height: 2.5rem;
     width: 6rem;
@@ -144,13 +153,8 @@ h4{
     align-items: center;
     justify-content: center;
     transform: rotate(-90deg);
-    box-shadow: -5px 5px 12px #000;
     font-weight: 600;
 } 
-
-.scroll-button:hover{
-    background-color: #CAD7E4;
-}
 
 .contact-splash-wrapper{    
     grid-column-start: 2;
@@ -175,6 +179,7 @@ h4{
 
 .contact-splash:hover{
     background-color: #CAD7E4;
+    box-shadow: inset 5px 5px 12px #000;
 }
 
 .name{
@@ -312,14 +317,11 @@ h4{
 }
 
 /* CSS til projekter*/
+
 .grid-projects{
     display: flex;
     flex-direction: column;
 }
-
-
-
-
 
 /* Grid til kontakt */
 
@@ -407,6 +409,10 @@ h4{
     box-shadow: 5px 5px 12px #000;
 }
 
+.black-send-button:hover{
+    box-shadow: inset 5px 5px 12px #000;
+}
+
 /* Icon graffik - mørk*/
 
 .icon-wrapper{
@@ -446,7 +452,7 @@ h4{
 }
 
 .icon-style-light{
-    border: solid 2px #CAD7E4; /* for ikke nogen border uden solid*/
+    border: solid 2px #CAD7E4;
     border-radius: 50%;
     width: 32px;
     height: 32px;

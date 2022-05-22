@@ -4,3 +4,5 @@ function load(){
     console.log("function is running");
     window.location.hash="splash"; 
 }
+
+//Source: Sandie Neander Petersen

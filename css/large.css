@@ -310,10 +310,11 @@
         grid-column-end: 3;
         grid-row-start: 1;
         grid-row-end: 2;
-        display: grid;
-        grid-template-columns: 1fr 1.4fr 2fr 1.4fr 1fr;
+        /*display: grid;
+        grid-template-columns: 1fr 1.4fr 2fr 1.4fr 1fr;*/
     }
-
+    
+    /*
     .grid-box{
         display: grid;
         grid-template-columns: 1rem 1fr 1rem;
@@ -339,7 +340,7 @@
     
     .box-small{
         height: 20rem;
-        max-width: 15rem;
+        max-width: 100%;
     }
     
     .box-medium{
@@ -404,7 +405,7 @@
     
     .grid-box:hover > cite{
         color: transparent;
-    }
+    }*/
 
     
     /*contact grids*/

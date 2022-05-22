@@ -201,7 +201,6 @@ h4{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows:  1fr 1fr 1fr;
-    height: 100%;
 }
 
 .concept-image{
@@ -312,12 +311,20 @@ h4{
     padding-bottom: 1.5rem;
 }
 
+/* CSS til projekter*/
+
+
+
+
+
+
 /* Grid til kontakt */
 
 .grid-contact-black{
     display: grid;
     grid-template-columns: 3.5rem 1fr 3.5rem;
     grid-template-rows: 1fr;
+    height: 100%;
 }
 
 .icon-contact{

@@ -90,7 +90,7 @@
     .about-grid{
         display: grid;
         grid-template-columns: 1fr 0.25fr 1fr;
-        grid-template-rows: 1fr 1fr auto 1fr 1fr;
+        grid-template-rows: 0.2fr 1fr 0.2fr;
         padding: 2rem;
         height: 60vh;
     }
@@ -98,8 +98,8 @@
     .who{
         grid-column-start: 1;
         grid-column-end: 2;
-        grid-row-start: 2;
-        grid-row-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
         display: flex;
         align-items: center;
         text-shadow: 5px 5px 12px rgba(0,0,0,1);
@@ -108,8 +108,8 @@
     .about-info{
         grid-column-start: 1;
         grid-column-end: 3;
-        grid-row-start: 3;
-        grid-row-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
         font-size: 1.2rem;
         display: flex;
         flex-direction: column;
@@ -119,8 +119,8 @@
     .about-image{
         grid-column-start: 2;
         grid-column-end: 4;
-        grid-row-start: 2;
-        grid-row-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 4;
         box-shadow: 10px 10px 24px #000;
         border: solid 2px #151515;
         border-radius: 2px;
@@ -257,11 +257,31 @@
         grid-row-end: 5;
     }
 
+    /* css til projekter*/
+    .grid-projects{
+        display: grid;
+        grid-template-rows: 8rem 1fr;
+    }
+    
+    .projects-two{
+        grid-row-start: 1;
+        grid-row-end: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .carousel{
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
     /* css til kontakt sektionen */
     
     .grid-contact-black{
         grid-template-columns: 3.5rem 1fr 3.5rem;
         grid-template-rows: 8rem 1fr 2fr;
+        
     }
 
     .contact-three{
@@ -282,6 +302,7 @@
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
+        padding-bottom: 1rem;
     }
 
     .form-black{
@@ -289,7 +310,7 @@
         grid-column-end: 3;
         grid-row-start: 3;
         grid-row-end: 4;
-        margin: 0;
+        margin-bottom: 4.5rem;
     }
 
     .icon-contact{

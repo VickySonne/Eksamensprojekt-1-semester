@@ -1,6 +1,6 @@
 /*Specifikt til computere - Fuld HTML*/
 
-@media only screen and (min-width: 821px) {
+@media only screen and (min-width: 821px){
     
     .hide-tablet{
         display: block;
@@ -12,7 +12,6 @@
 
     body{
         height: 100vh;
-        background-color: green;
     }
 
     h6{
@@ -26,7 +25,6 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr;
-        background-color: aqua;
     }
 
     #contact-white{
@@ -45,7 +43,6 @@
         grid-column-end: 3;
         grid-row-start: 1;
         grid-row-end: 2;
-        background-color: plum;
     }
 
     #about{
@@ -59,13 +56,11 @@
 
     #skills{
         height: 100%;
-        width: 100vw;
+        width: 80vw;
         grid-column-start: 4;
         grid-column-end: 5;
         grid-row-start: 1;
         grid-row-end: 2;
-        display: flex;
-        background-color: yellow;
     }
 
     #projects{
@@ -75,7 +70,6 @@
         grid-column-end: 6;
         grid-row-start: 1;
         grid-row-end: 2;
-        display: flex;
         background-color: orange;
     }
 
@@ -195,20 +189,135 @@
 
     /*CSS til om mig*/
     .about-grid{
-        height: 100%;
-        padding: 0 2rem;
+        padding: 3rem;
     }
 
     /* css og grids til kompetence sektionen*/
+
     .grid-skills{
+        grid-template-columns: 8rem 1fr 1fr 1fr 1fr;
+        grid-template-rows:  1fr 1fr 1fr;
+    }
+
+    .skills-one{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 4;
+        margin-bottom: 8rem;
+    }
+
+    .concept-image{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    
+    .ui-image{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    
+    .proto-image{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    
+    .html-image{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start:3;
+        grid-row-end: 4;
+    }
+    
+    .ani-image{
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    
+    .foto-image{
+        grid-column-start: 5;
+        grid-column-end: 6;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    .concept-text{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .ui-text{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    
+    .proto-text{
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    .html-text{
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    .ani-text{
+        grid-column-start: 5;
+        grid-column-end: 6;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .foto-text{
+        grid-column-start: 5;
+        grid-column-end: 6;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    /*css til projekter*/
+    .grid-projects{
+        grid-template-columns: 8rem 1fr;
+        grid-template-rows: 1fr;
+    }
+    
+    .projects-two{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        margin-bottom: 8rem;
+    }
+    
+    .carousel{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .box-small{
+        
     }
 
     
     /*contact grids*/
-    .contact{
-        display: flex;
-        flex-direction: row;
-    }
 
     /* light contact*/
    
@@ -299,6 +408,7 @@
         grid-column-end: 2;
         grid-row-start: 1;
         grid-row-end: 6;
+        margin-bottom: 8rem;
     }
     
     .address-black{
@@ -324,8 +434,6 @@
         grid-row-end: 6;
     }
 
-    
-   
     /* css til vertikale headings*/
     
     .line-horizontal{
@@ -350,13 +458,4 @@
         justify-content: center;
         margin: 0;
     }
-
-
-
-
-
-
-
-
-
 }

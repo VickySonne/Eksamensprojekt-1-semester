@@ -310,10 +310,100 @@
         grid-column-end: 3;
         grid-row-start: 1;
         grid-row-end: 2;
+        display: grid;
+        grid-template-columns: 1fr 1.4fr 2fr 1.4fr 1fr;
     }
 
+    .grid-box{
+        display: grid;
+        grid-template-columns: 1rem 1fr 1rem;
+        grid-template-rows: 1rem 1fr 0.25fr 0.75rem;
+        max-width: 100%;
+    }
+    
+    .box-wrapper{
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 8rem;
+    }
+    
+    .box{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        background-color: blueviolet;
+        border: solid 2px #151515;
+        border-radius: 2px;
+    }
+    
     .box-small{
+        height: 20rem;
+        max-width: 15rem;
+    }
+    
+    .box-medium{
+        height: 25rem;
+        max-width: 20rem;
+    }
+    
+    .box-large{
+        height: 30rem;
+        max-width: 30rem;
+    }
+    
+    .project-title-two{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 5;
+        font-size: 1.5rem;
+        font-weight: 700;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
         
+    }
+    
+    .project-title-one{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 5;
+        font-size: 1.5rem;
+        font-weight: 700;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .details{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 0.5rem;
+        gap: 0.5rem;
+    }
+    
+    .grid-box > div{
+        color: transparent;
+    }
+    
+    .grid-box > cite{
+        color:#151515
+    }
+    
+    .grid-box:hover > div{
+        color: #151515
+    }
+    
+    .grid-box:hover > cite{
+        color: transparent;
     }
 
     

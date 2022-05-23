@@ -76,7 +76,6 @@ main{ /*Mørkt tema*/
 
 section{
     height: calc(95vh - 3rem);
-    background-color: none;
 }
 
 .light-theme{
@@ -117,7 +116,7 @@ h5{
 
 .side-portrait{ /* Skal måske have det til kun at fylde halvdelen af sectionen, kommer an på billedet*/
     /*background-image: url(https://fakeimg.pl/320x500/);*/
-    background-color: none;
+    background-color: transparent;
     background-repeat: no-repeat;
     grid-column-start: 3;
     grid-column-end: 5;
@@ -500,7 +499,7 @@ h5{
 
 .bar-border{
     border: solid 2px #151515;
-    background-color: none;
+    background-color: transparent;
     border-radius: 50px;
     height: 1rem;
     width: 9rem;

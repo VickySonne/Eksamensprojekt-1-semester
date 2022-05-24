@@ -88,6 +88,7 @@
     /*CSS til forside*/
 
     .grid-splash{
+        grid-template-columns: 0.5fr 2fr 2fr 0.5fr;
         grid-template-rows: 1fr 2fr 1fr 1fr 3fr 1fr;
     }
 
@@ -103,7 +104,7 @@
         grid-column-end: 4;
         grid-row-start: 1;
         grid-row-end: 2;
-        padding-left: 2rem;
+        padding-left: 0;
     }
 
     .intro{
@@ -118,13 +119,20 @@
         grid-column-end: 5;
         grid-row-start: 3;
         grid-row-end: 4;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 1.5rem;
+        align-items: flex-end;
     }
     
     .contact-promt{
         grid-column-start: 2;
         grid-column-end: 3;
-        grid-row-start: 2;
-        grid-row-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 6;
+        padding-left: 0;
+        padding-top: 1rem;
+        width: 50%;
     }
 
     .contact-here{
@@ -132,6 +140,9 @@
         grid-column-end: 3;
         grid-row-start: 3;
         grid-row-end: 4;
+        display: flex;
+        align-items: flex-end;
+        padding-left: 1.5rem;
     }
     
     .scroll-button-wrapper{
@@ -139,7 +150,9 @@
         grid-column-end: 5;
         grid-row-start: 6;
         grid-row-end: 7;
-        padding: 0;
+        padding-bottom: 0;
+        padding-right: 1.5rem;
+        
     }
 
     .scroll-button{
@@ -160,20 +173,41 @@
         display: flex;
         align-items: center;
         justify-content: center;
-
     }
+
     .icon-size{
         font-size: 3rem;
     }
 
+    .white-button-wrapper{
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 1.5rem;
+    }
+
    .white-button{
-    background-color: #E1E8EE;
-   }
+        background-color: #E1E8EE;
+    }
 
    .white-button:hover{
         box-shadow: inset 5px 5px 12px #000;
    }
     
+   .black-button-wrapper{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        display: flex;
+        align-items: center;
+        padding-left: 1.5rem;
+   }
+
     .black-button{
         background-color: #151515;
     }

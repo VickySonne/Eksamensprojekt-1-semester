@@ -17,7 +17,8 @@
     men det vil sige at hvis jeg 
     lavede en mediaquery 
     ved en højere breaking point, 
-    ville det override der.
+    ville det override der. Behøvede
+    ikke at bruge det aligevel.
     */
 
     .hide-tablet{
@@ -276,103 +277,63 @@
         grid-row-start: 2;
         grid-row-end: 3;
         display: grid;
-        grid-template-columns: 1fr 1.4fr 2fr 1.4fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto 1fr auto;
     }
-
-    /*.grid-box{
-        display: grid;
-        grid-template-columns: 1rem 1fr 1rem;
-        grid-template-rows: 1rem 1fr 0.25fr 0.75rem;
-        max-width: 100%;
-    }
-    
-    .box-wrapper{
-        display: flex;
-        align-items: center;
-        margin-bottom: 2rem;
-        word-break: break-word;
-    }
-    
-    .box{
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start: 2;
-        grid-row-end: 4;
-        background: rgb(48,48,50);
-        background: radial-gradient(circle at 50% 35%, rgba(48,48,50,1) 0%, rgba(21,21,21,1) 100%);
-        border: solid 2px #151515;
-        border-radius: 2px;
-        box-shadow: 10px 10px 24px #000;
-    }*/
     
     .box-small{
         height: 20rem;
-        max-width: 15rem;
     }
     
     .box-medium{
-        height: 25rem;
-        max-width: 20rem;
+        height: 20rem;
     }
     
     .box-large{
-        height: 30rem;
-        max-width: 30rem;
-    }
-    
-    /*.project-title{
-        grid-column-start: 1;
-        grid-column-end: 4;
-        grid-row-start: 3;
-        grid-row-end: 5;
-        font-size: 2rem;
-        font-weight: 700;
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
-        text-align: center;
-        text-shadow: 5px 5px 12px rgba(0,0,0,1);
-    }
-    
-    .details{
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start: 2;
-        grid-row-end: 4;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        padding: 0.5rem;
-        gap: 0.5rem;
-    }
-    
-    .grid-box > .details{
-        color: transparent;
-    }
-    
-    .grid-box > cite{
-        color:#E1E8EE;
-    }
-    
-    .grid-box:hover > .details{
-        color: #E1E8EE;
-    }
-    
-    .grid-box:hover > cite{
-        color: transparent;
-        text-shadow: 5px 5px 12px rgba(0,0,0,0);
+        height: 25rem;
     }
 
-    .grid-box:hover > .details{
-        background: linear-gradient(rgba(21, 21, 21,0.0), #151515);
-    }*/
+    .project-logo{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .project-redesign{
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .project-portfolio{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    .project-concept{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    .project-css{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
 
     /* css til kontakt sektionen */
     
     .grid-contact-black{
         grid-template-columns: 3.5rem 1fr 3.5rem;
         grid-template-rows: 8rem 1fr 2fr;
-        
+        padding-top: 0;
     }
 
     .contact-three{

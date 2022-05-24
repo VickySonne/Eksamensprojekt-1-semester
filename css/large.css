@@ -189,6 +189,16 @@
         transform: rotate(180deg);
     }
 
+    @keyframes bounce {
+        0%   { transform: translateX(0); }
+        10%  { transform: translateX(0); }
+        30%  { transform: translateX(-25px); }
+        50%  { transform: translateX(0); }
+        57%  { transform: translateX(-5px); }
+        64%  { transform: translateX(0); }
+        100% { transform: translateX(0); }
+}
+
     .buttons{
         border: solid 2px #151515;
         border-radius: 50%;

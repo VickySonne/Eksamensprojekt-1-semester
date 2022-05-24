@@ -140,6 +140,8 @@ h5{
     align-items: center;
     justify-content: flex-end;
     padding-bottom: 1.2rem;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
 }
 
 .scroll-button{
@@ -155,6 +157,21 @@ h5{
     transform: rotate(-90deg);
     font-weight: 600;
 } 
+
+.bounce {
+    animation-name: bounce;
+    animation-timing-function: ease;
+}
+
+@keyframes bounce {
+    0%   { transform: translateY(0); }
+    10%  { transform: translateY(0); }
+    30%  { transform: translateY(-25px); }
+    50%  { transform: translateY(0); }
+    57%  { transform: translateY(-5px); }
+    64%  { transform: translateY(0); }
+    100% { transform: translateY(0); }
+}
 
 .contact-splash-wrapper{    
     grid-column-start: 2;

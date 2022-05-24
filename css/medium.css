@@ -261,6 +261,7 @@
     .grid-projects{
         display: grid;
         grid-template-rows: 8rem 1fr;
+        padding-top: 0;
     }
     
     .projects-two{
@@ -278,7 +279,7 @@
         grid-template-columns: 1fr 1.4fr 2fr 1.4fr 1fr;
     }
 
-    .grid-box{
+    /*.grid-box{
         display: grid;
         grid-template-columns: 1rem 1fr 1rem;
         grid-template-rows: 1rem 1fr 0.25fr 0.75rem;
@@ -287,8 +288,8 @@
     
     .box-wrapper{
         display: flex;
-        align-items: flex-end;
-        margin-bottom: 8rem;
+        align-items: center;
+        margin-bottom: 2rem;
         word-break: break-word;
     }
     
@@ -302,7 +303,7 @@
         border: solid 2px #151515;
         border-radius: 2px;
         box-shadow: 10px 10px 24px #000;
-    }
+    }*/
     
     .box-small{
         height: 20rem;
@@ -319,7 +320,7 @@
         max-width: 30rem;
     }
     
-    .project-title{
+    /*.project-title{
         grid-column-start: 1;
         grid-column-end: 4;
         grid-row-start: 3;
@@ -364,7 +365,7 @@
 
     .grid-box:hover > .details{
         background: linear-gradient(rgba(21, 21, 21,0.0), #151515);
-    }
+    }*/
 
     /* css til kontakt sektionen */
     

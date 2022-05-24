@@ -331,10 +331,10 @@ h5{
     max-width: 100%;
 }
 
-.box-wrapper{
+/*.box-wrapper{
     display: flex;
     align-items: flex-end;
-}
+}*/
 
 .box{
     grid-column-start: 2;
@@ -350,17 +350,14 @@ h5{
 
 .box-small{
     height: 20rem;
-    /*max-width: 15rem;*/
 }
 
 .box-medium{
-    height: 25rem;
-    /*max-width: 20rem;*/
+    height: 25rem;    
 }
 
 .box-large{
-    height: 30rem;
-    /*max-width: 30rem;*/
+    height: 30rem;    
 }
 
 .project-title{
@@ -418,6 +415,7 @@ h5{
     grid-template-columns: 3.5rem 1fr 3.5rem;
     grid-template-rows: 1fr;
     height: 100%;
+    padding-top: 2rem;
 }
 
 .icon-contact{

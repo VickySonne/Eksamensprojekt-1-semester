@@ -124,7 +124,7 @@ h5{
     grid-row-end: 5;
 }
 
-.intro{
+.intro-wrapper{
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 2;

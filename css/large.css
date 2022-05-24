@@ -39,6 +39,7 @@
         grid-column-end: 3;
         grid-row-start: 1;
         grid-row-end: 2;
+        background: transparent;
     }
 
     #about{
@@ -92,15 +93,15 @@
         grid-template-rows: 1fr 2fr 1fr 1fr 3fr 1fr;
     }
 
-    .splash-black-background{
-        grid-column-start: 3;
-        grid-column-end: 5;
+    .light-text{
+        color: #E1E8EE;
+    }
+
+    .white-box{
+        grid-column-start: 1;
+        grid-column-end: 3;
         grid-row-start: 1;
         grid-row-end: 7;
-        width: 50vw;
-        height: 100%;
-        background: rgb(48,48,50);
-        background: radial-gradient(circle, rgba(48,48,50,1) 0%, rgba(21,21,21,1) 100%);
     }
 
     .portrait{

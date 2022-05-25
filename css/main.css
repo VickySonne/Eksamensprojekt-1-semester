@@ -115,14 +115,14 @@ h5{
     grid-template-rows: 1fr 2fr 2fr 1fr;
 }
 
-.side-portrait{ /* Skal måske have det til kun at fylde halvdelen af sectionen, kommer an på billedet*/
-    /*background-image: url(https://fakeimg.pl/320x500/);*/
-    background-color: transparent;
-    background-repeat: no-repeat;
-    grid-column-start: 3;
+.mobile-splash-image{ /* Skal måske have det til kun at fylde halvdelen af sectionen, kommer an på billedet*/
+    grid-column-start: 2;
     grid-column-end: 5;
-    grid-row-start: 2;
+    grid-row-start: 1;
     grid-row-end: 5;
+    object-fit: cover;
+    object-position: 35% 50%;
+    height: 100%;
 }
 
 .intro-wrapper{
@@ -229,36 +229,54 @@ h5{
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
 }
 
 .ui-image{
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
 }
 
 .proto-image{
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 2;
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
 }
 
 .html-image{
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 2;
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
 }
 
 .ani-image{
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 3;
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
 }
 
 .foto-image{
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 3;
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
 }
 
 .concept-text{

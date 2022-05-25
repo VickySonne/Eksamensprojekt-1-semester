@@ -49,6 +49,14 @@
         grid-template-rows: 1fr 2fr 2fr 2fr 1fr;
     }
 
+    .mobile-splash-image{ /* Skal måske have det til kun at fylde halvdelen af sectionen, kommer an på billedet*/
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 6;
+        object-position: 30% 50%;
+    }
+
     .name{
         padding-left: 2rem;
     }
@@ -117,14 +125,21 @@
         gap: 1rem;
     }
 
-    .about-image{
+    .about-image-wrapper{
         grid-column-start: 2;
         grid-column-end: 4;
         grid-row-start: 1;
         grid-row-end: 4;
+        height: 100%;
+        width: 100%;
+    }
+    .about-image{
         box-shadow: 10px 10px 24px #000;
         border: solid 2px #151515;
         border-radius: 2px;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
     }
     
     /*Grafiske vertikale headings*/

@@ -441,6 +441,16 @@ h5{
     background: linear-gradient(rgba(21, 21, 21,0.0), #151515);
 }
 
+.details > a{
+    text-decoration: underline;
+}
+
+.details > a:hover{
+    color: #48546E;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 
 /* Grid til kontakt */
 
@@ -600,14 +610,10 @@ h5{
 
 .bar-fill{
     height: 100%;
-    width: 25%;
+    width: 35%;
     background-color: #48546E;
     border-bottom-left-radius: 50px;
     border-top-left-radius: 50px;
-}
-
-.amount-35{
-    width: 35%;
 }
 
 .amount-50{

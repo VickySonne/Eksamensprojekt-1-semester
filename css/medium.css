@@ -132,14 +132,30 @@
         grid-row-end: 4;
         height: 100%;
         width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
     }
+
     .about-image{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
         box-shadow: 10px 10px 24px #000;
         border: solid 2px #151515;
         border-radius: 2px;
         height: 100%;
         object-fit: cover;
         object-position: center;
+    }
+
+    .filter{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        background: linear-gradient(rgba(21, 21, 21,0.0), #151515);
     }
     
     /*Grafiske vertikale headings*/

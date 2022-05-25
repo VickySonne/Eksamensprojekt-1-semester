@@ -318,10 +318,16 @@
     
     .box-medium{
         height: 20rem;
+        display: flex;
+        align-content: center;
+        justify-content: center;
     }
     
     .box-large{
         height: 25rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .project-logo{
@@ -345,11 +351,25 @@
         grid-row-end: 3;
     }
 
+    .portfolio{
+        width: 60%;
+        height: 90%;
+        object-fit: cover;
+        object-position: 50% 30%;
+    }
+
     .project-concept{
         grid-column-start: 1;
         grid-column-end: 3;
         grid-row-start: 3;
         grid-row-end: 4;
+    }
+
+    .concept{
+        width: 80%;
+        height: 95%;
+        object-fit: cover;
+        object-position: 50% 20%;
     }
 
     .project-css{
@@ -358,6 +378,8 @@
         grid-row-start: 3;
         grid-row-end: 4;
     }
+
+    
 
     /* css til kontakt sektionen */
     

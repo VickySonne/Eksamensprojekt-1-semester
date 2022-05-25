@@ -440,11 +440,25 @@
         grid-row-end: 2;
     }
 
+    .portfolio{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+
     .project-concept{
         grid-column-start: 4;
         grid-column-end: 5;
         grid-row-start: 1;
         grid-row-end: 2;
+    }
+
+    .concept{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 50%;
     }
 
     .project-css{

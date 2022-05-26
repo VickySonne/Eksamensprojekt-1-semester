@@ -64,6 +64,19 @@ a{
     cursor: pointer;
 }
 
+.logo-wrapper{
+    height: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo{
+    width: 5rem;
+    height: 2rem;
+}
+
 /* CSS til maincontent*/
 
 main{ /*Mørkt tema*/
@@ -111,7 +124,7 @@ h5{
 .grid-splash{
     display: grid;
     grid-template-columns: 1fr 2fr 2fr 1fr;
-    grid-template-rows: 1fr 2fr 2fr 1fr;
+    grid-template-rows: 0.5fr 2fr 2fr 1fr;
 }
 
 .mobile-splash-image{ /* Skal måske have det til kun at fylde halvdelen af sectionen, kommer an på billedet*/
@@ -177,6 +190,7 @@ h5{
     grid-column-end: 4;
     grid-row-start: 3;
     display: flex;
+    align-items: center;
 }
 
 .contact-splash{
@@ -379,6 +393,9 @@ h5{
 
 .box-small{
     height: 20rem;
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }
 
 .box-medium{
@@ -448,6 +465,20 @@ h5{
     color: #48546E;
     text-decoration: underline;
     cursor: pointer;
+}
+
+.animation{
+    object-fit: cover;
+    object-position: 50% 20%;
+    width: 95%;
+    height: 95%;
+}
+
+.logo{
+    object-fit: cover;
+    object-position: 50% 15%;
+    width: 100%;
+    height: 100%;
 }
 
 /* Grid til kontakt */

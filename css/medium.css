@@ -8,6 +8,14 @@
         height: 4rem;
     }
 
+    .logo-wrapper{
+        height: 3rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 0;
+    }
+
     .hide-mobil{
         display: block; 
     }
@@ -62,7 +70,12 @@
     }
 
     .intro-wrapper{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
         padding-left: 2rem;
+        padding-right: 8rem;
     }
     
     .contact-promt{
@@ -77,6 +90,13 @@
         grid-column-end: 4;
         grid-row-start: 4;
         padding-top: 1rem;
+    }
+
+    .contact-splash{
+        height: 5rem;
+        width: 13.5rem;
+        font-size: 1.7rem;
+        font-weight: 600;
     }
 
     .scroll-button-wrapper{
@@ -337,6 +357,12 @@
         grid-row-end: 2;
     }
 
+    .logo{
+        object-position: 50% 20%;
+        width: 95%;
+        height: 95%;
+    }
+
     .project-redesign{
         grid-column-start: 2;
         grid-column-end: 4;
@@ -386,7 +412,11 @@
         grid-row-end: 4;
     }
 
-    
+    .animation{
+        object-position: 50% 50%;
+        width: 100%;
+        height: 100%;
+    }    
 
     /* css til kontakt sektionen */
     

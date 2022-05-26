@@ -428,6 +428,13 @@
         grid-row-end: 2;
     }
 
+    .logo-design{
+        object-fit: contain;
+        object-position: 50% 50%;
+        width: 100%;
+        height: 100%;
+    }
+
     .project-redesign{
         grid-column-start: 2;
         grid-column-end: 3;
@@ -475,9 +482,10 @@
     }
 
     .animation{
+        object-fit: contain;
         object-position: 50% 50%;
-        width: 95%;
-        height: 95%;
+        width: 100%;
+        height: 100%;
     }
     
     /*contact grids*/
@@ -509,6 +517,7 @@
         flex-direction: column;
         gap: 0.5rem;
         padding: 1rem;
+        padding-top: 1.5rem;
     }
 
     .form-light{
@@ -584,6 +593,7 @@
         grid-row-start: 2;
         grid-row-end: 4;
         padding: 1rem;
+        padding-top: 1.5rem;
     }
 
     .form-black{

@@ -44,9 +44,8 @@ header{
     font-weight: 600;
     }
 
-nav{
+ul{
     display: flex;
-    flex-direction: row;
     gap: 1rem;
 }
 
@@ -450,7 +449,6 @@ h5{
     text-decoration: underline;
     cursor: pointer;
 }
-
 
 /* Grid til kontakt */
 

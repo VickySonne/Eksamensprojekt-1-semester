@@ -433,6 +433,13 @@
         grid-row-end: 2;
     }
 
+    .redesign{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+
     .project-portfolio{
         grid-column-start: 3;
         grid-column-end: 4;

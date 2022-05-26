@@ -344,6 +344,13 @@
         grid-row-end: 2;
     }
 
+    .redesign{
+        width: 85%;
+        height: 95%;
+        object-fit: cover;
+        object-position: 50% 20%;
+    }
+
     .project-portfolio{
         grid-column-start: 1;
         grid-column-end: 4;

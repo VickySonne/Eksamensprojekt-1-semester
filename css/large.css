@@ -131,7 +131,7 @@
         grid-column-end: 4;
         grid-row-start: 1;
         grid-row-end: 2;
-        padding-left: 2rem;
+        padding-left: 2.5rem;
         display: flex;
         justify-content: center;
     }
@@ -141,13 +141,14 @@
         grid-column-end: 4;
         grid-row-start: 2;
         grid-row-end: 3;
-        padding-left: 1rem;
+        padding-left: 3.75rem;
         display: flex;
         justify-content: center;
+        padding-right: 0;
     }
 
     .intro{
-        width: 50%;
+        width: 60%;
         display: flex;
         justify-content: center;
     }
@@ -275,6 +276,7 @@
     .grid-skills{
         grid-template-columns: 8rem 1fr 1fr 1fr 1fr;
         grid-template-rows:  1fr 1fr 1fr;
+        margin-right: 1rem;
     }
 
     .skills-one{
@@ -470,6 +472,12 @@
         grid-column-end: 6;
         grid-row-start: 1;
         grid-row-end: 2;
+    }
+
+    .animation{
+        object-position: 50% 50%;
+        width: 95%;
+        height: 95%;
     }
     
     /*contact grids*/

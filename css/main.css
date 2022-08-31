@@ -131,6 +131,7 @@ h5{
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 5;
+    
     object-fit: cover;
     object-position: 35% 50%;
     height: 100%;
